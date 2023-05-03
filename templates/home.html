@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+        <div class="hamburger-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+    </div>
+  </header>
+  <div class="banner">
+    <img src="../static/sun.jpg">
+  </div>
+  <main>
+    <div class="container">
+      <article>
+        <header>
+          <h2>My First Blog Post</h2>
+          <p class="meta">Posted on January 1, 2023 by Jane Doe</p>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel sapien faucibus, placerat massa eu, laoreet risus. Suspendisse potenti. Sed at libero non diam interdum faucibus. Nulla eleifend hendrerit metus, id pulvinar nisi dignissim et. Sed at nulla vel quam malesuada aliquam vel vitae elit. Ut eu lorem ac elit convallis semper. Sed consectetur arcu a velit tincidunt, id convallis felis pretium. Suspendisse suscipit ante vel tortor fringilla lobortis. Nullam quis lectus at lectus vestibulum mollis.</p>
+        <a href="#" class="read-more">Read more</a>
+      </article>
+
+      <article>
+        <header>
+          <h2>My Second Blog Post</h2>
+          <p class="meta">Posted on January 2, 2023 by Jane Doe</p>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel sapien faucibus, placerat massa eu, laoreet risus. Suspendisse potenti. Sed at libero non diam interdum faucibus. Nulla eleifend hendrerit metus, id pulvinar nisi dignissim et. Sed at nulla vel quam malesuada aliquam vel vitae elit. Ut eu lorem ac elit convallis semper. Sed consectetur arcu a velit tincidunt, id convallis felis pretium. Suspendisse suscipit ante vel tortor fringilla lobortis. Nullam quis lectus at lectus vestibulum mollis.</p>
+        <a href="#" class="read-more">Read more</a>
+      </article>
+
+      <article>
+        <header>
+          <h2>My Third Blog Post</h2>
+          <p class="meta">Posted on January 3, 2023 by Jane Doe</p>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel sapien faucibus, placerat massa eu, laoreet risus. Suspendisse potenti. Sed at libero non diam interdum faucibus. Nulla eleifend hendrerit metus, id pulvinar nisi dignissim et. Sed at nulla vel quam malesuada aliquam vel vitae elit. Ut eu lorem ac elit convallis semper. Sed consectetur arcu a velit tincidunt, id convallis felis pretium. Suspendisse suscipit ante vel tortor fringilla lob
+      </article>
+    </div>
+ </main>
+  <footer>
+    <div class="container">
+      <p>Copyright &copy; 2023</p>
+    </div>
+  </footer>
+  <script>
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburgerMenu.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    });
+
+  </script>
+</body>
+</html>
