@@ -2,9 +2,13 @@
   box-sizing: border-box;
 }
 body {
+    background-color:#555;
     margin: 0;
     padding: 0;
     }
+body img {
+    opacity:50%;
+}
 header {
     position:fixed;
     margin-bottom:0;
@@ -12,7 +16,8 @@ header {
 }
 .banner h1, h2 {
     text-align: center;
-    font-family: Harrington, Fantasy;
+    font-family: Papyrus, Fantasy;
+    text-shadow: 1px 2px 2px red;
 }
 .carousel-container {
   position: relative;
@@ -38,9 +43,9 @@ footer {
 .container {
   position: relative;
   width: 100%;
-  margin: 0 auto;
   height: 500px;
-  border: 1px solid #ccc;
+  margin: 0;
+  padding:0;
   overflow: hidden;
 }
 .container img {
@@ -61,8 +66,15 @@ footer {
 .content h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  font-family: Harrington, Fantasy;
+  text-shadow: 3px 5px 5px red;
 }
 
 .content p {
   font-size: 1.5rem;
+}
+#about {
+    text-align: center;
+    justify-content:center;
+    margin: 10%;
 }
